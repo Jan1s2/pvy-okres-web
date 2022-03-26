@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>test</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+        <script src="js/formular.js"></script>
+        <script src="js/image.js"></script>
+    </head>
+    <body>
+        <div class="nav">
+            <div class="wrapper">
+                <div class="top">
+                    <a href="http://sport.idnes.cz/skoky-na-lyzich-ms-falun-velky-mustek-d8z-/lyzovani.aspx?c=A150226_145006_lyzovani_tny">iDnes</a>
+                    <a href="http://www.ceskatelevize.cz/sport/zimni-sporty/302984-koudelka-se-znovu-nedockal-na-velkem-mustku-dominoval-freund/">Česká televize</a>
+                    <a href="http://en.wikipedia.org/wiki/FIS_Nordic_World_Ski_Championships_2015_%E2%80%93_Individual_large_hill">Wikipedie</a>
+                    <form class="searchbox" action="javascript:void(0);">
+                        <input type="text" placeholder="Zadej hledaný text">
+                        <button type="submit">Hledej</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="titles">
+            <div class="wrapper">
+                <div class="middle">
+                    <div class="title-text">
+                        <h1>SPORT</h1>
+                        <h2>Zprávy ze světa sportu</h2>
+                    </div>
+                    <img src="img/banner.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="wrapper">
+                <div class="main">
+                    <div class="article">
+                        <h2 id="nadpis">Němec Freund suverénním vítězem na velkém můstku</h2>
+                        <p>
+                            <b>Falun</b> – <mark>Roman Koudelka</mark> z mistrovství světa odjede bez medaile. 
+                            Český skokan, který již před závodem na velkém můstku prohlašoval, 
+                            že by byl rád za umístění kolem šestého místa, obsadil nakonec osmou pozici. 
+                            Ze suverénního vítězství se radoval Němec <mark>Severin Freund</mark>, 
+                            který o více než 22 bodů porazil překvapení závodu <mark>Gregora Schlierenzauera</mark> z Rakouska. 
+                            Třetí místo patří <mark>Runemu Veltovi</mark> z Norska. Další Čech <mark>Jan Matura</mark> skončil šestnáctý.
+                        </p>
+                        <p class="small-text">
+                            V první kole skočil Koudelka 123,5 metru, v polovině závodu byl jedenáctý a od cenného kovu ho dělilo skoro deset bodů. Ve finále se nakonec zlepšil o metr, což znamenalo posun pořadím až na osmé místo. Sice nepotvrdil roli jednoho z favoritů na medaili, ale na svém pátém světovém šampionátu zaznamenal nejlepší výsledek na velkém můstku v kariéře.
+                        </p>
+                        <div class="image-container">
+                            <img src="img/freund.jpg" alt="freund" id="image-zavod">
+                            <i id="image-text">Vítěz závodu Severin Freund z Německa</i>
+                        </div>
+                        <button class="small-text" onclick="change_image()">Další fotka v galerii</button>
+                        <p class="small-text">                            
+                            Freund neměl soupeře. V prvním kole převedl nejdelší skok mezi všemi: 134 metrů a vedl o skoro pět bodů. A ani v posledním skoku dne neponechal nic náhodě a rekordem můstku 135,5 metru vedení ještě výrazně navýšil.
+                        </p>
+                        <p class="small-text" id="zdroj">                            
+                            Zdroj: <a href="http://www.ceskatelevize.cz/sport/zimni-sporty/302984-koudelka-se-znovu-nedockal-na-velkem-mustku-dominoval-freund/">http://www.ceskatelevize.cz/sport/zimni-sporty/302984-koudelka-se-znovu-nedockal-na-velkem-mustku-dominoval-freund/</a>
+                        </p>
+                    </div>
+                    <div class="sidebar">
+                        <h3>Ohlasy po závodě</h3>
+                        <div class="citace">
+                            <h5>Roman Koudelka:</h5>
+                            <p>"Mám radost. Povedlo se mi strašně otočit hlavu, od rána jsem byl pozitivní a skoky se mi opravdu povedly. Nebyly vůbec špatný, i když podmínky nebyly ideální, ale to se nedá nic dělat. Škoda, že to nedopadlo do šestého místa, to by bylo ještě veselejší, ale takhle si myslím, že je velká spokojenost."
+                                </p>
+                        </div>
+                        <h3>Průběžné pořadí Světového poháru</h3>
+                        <ol>
+                            <li>
+                                Stefan Kraft (Rakousko)
+                            </li>
+                            <li>Peter Prevc (Slovinsko)</li>
+                            <li>Severin Freund (Německo)</li>
+                            <li>Anders Fannemel (Norsko)</li>
+                            <li>Roman Koudelka (ČR)</li>
+                        </ol>
+                        <h3>Anketa čtenářů</h3>
+                        <p>Kdo se podle Vás stane celkovým vítězem letošního světového poháru ve skoku na lyžích?</p>
+                        <form id="anketa">
+                            <div id="anketa-body">
+                            <input type="radio" id="stefan" name="osoba" value="kraft">
+                            <label for="stefan" id="kraft">Stefan Kraft</label>
+                            <br> 
+                            <input type="radio" id="peter" name="osoba" value="prevc">
+                            <label for="peter" id="prevc">Peter Prevc</label>
+                            <br>
+                            <input type="radio" id="severin" name="osoba" value="freund">
+                            <label for="severin" id="freund">Severin Freund</label>
+                            <br>
+                            <input type="radio" id="ostatni" name="osoba" value="jiny">
+                            <label for="ostatni" id="jiny">někdo jiný</label>
+                            </div>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <table id="vitezove">
+                    <caption>Výsledky závodu na velkém můstku na MS 2015 ve Falunu</caption>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">
+                                Pořadí
+                            </th>
+                            <th rowspan="2">
+                                Závodník
+                            </th>
+                            <th rowspan="2">
+                                Stát
+                            </th>
+                            <th colspan="2">
+                                1. kolo
+                            </th>
+                            <th colspan="2">
+                                2. kolo
+                            </th>
+                            <th rowspan="2">
+                                Celkem bodů
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                délka
+                            </th>
+                            <th>
+                                body
+                            </th>
+                            <th>
+                                délka
+                            </th>
+                            <th>
+                                body
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                1.
+                            </td>
+                            <td>
+                                <strong>Severin Freund</strong>
+                            </td>
+                            <td>
+                                <img src="img/germany-vlajka.png" alt="">
+                                <strong>GER</strong>
+                            </td>
+                            <td>
+                                134,0 m
+                            </td>
+                            <td>
+                                131,0 b.
+                            </td>
+                            <td>
+                                135,5 m
+                            </td>
+                            <td>
+                                137,0 b.
+                            </td>
+                            <td>
+                                <strong>268,7 b.</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2.
+                            </td>
+                            <td>
+                                <strong>Gregor Schlierenzauer</strong>
+                            </td>
+                            <td>
+                                <img src="img/austria-vlajka.png" alt="">
+                                <strong>AUT</strong>
+                            </td>
+                            <td>
+                                128,0 m
+                            </td>
+                            <td>
+                                122,9 b.
+                            </td>
+                            <td>
+                                130,0 m
+                            </td>
+                            <td>
+                                123,5 b.
+                            </td>
+                            <td>
+                                <strong>246,4 b.</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                3.
+                            </td>
+                            <td>
+                                <strong>Severin Freund</strong>
+                            </td>
+                            <td>
+                                <img src="img/norway-vlajka.png" alt="">
+                                <strong>NOR</strong>
+                            </td>
+                            <td>
+                                126,5 m
+                            </td>
+                            <td>
+                                118,1 b.
+                            </td>
+                            <td>
+                                128,5 m
+                            </td>
+                            <td>
+                                124,8 b.
+                            </td>
+                            <td>
+                                <strong>242,9 b.</strong>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="8">
+                                Kvalifikace se konala 25. 2. 2015 od 18:30, finále proběhlo ve čtvrtek 26. 2. 2015 od 17:00
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <hr>
+                &copy; Jan Stránský 2022
+            </div>
+
+        </div>
+    
+    </body>
+</html>
