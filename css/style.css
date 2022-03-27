@@ -189,15 +189,6 @@ mark {
     background-color: #fcf8e3;
 }
 
-/*@media screen and (max-width: 961px) {
-    .top, 
-    .middle, 
-    .main,
-    .wrapper {
-        width: 90%;
-    }
-}
-*/
 .small-text {
     font-size: 80%;
 }
@@ -239,4 +230,35 @@ th {
 }
 tfoot {
     background-color: #dedede;
+}
+
+@media screen and (max-width: 1010px) {
+    .wrapper {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 768px) {
+    #image-titles {
+        display: none;
+    }
+    .title-text {
+        margin: auto;
+    }
+    .main {
+        flex-direction: column;
+    }
+    #overflow  {
+        overflow-x:auto;
+    }
+    .article,
+    .sidebar {
+        width: 100%;
+    }
+    .top form {
+        display:none;
+    }
+    .top {
+        justify-content: space-around;
+    }
+
 }
