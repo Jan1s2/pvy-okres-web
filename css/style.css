@@ -32,6 +32,7 @@ body {
     margin: 0 auto;
     margin-bottom: 0px;
     height: inherit;
+    max-width: 95%;
     width: 960px;
     padding: 10px;
     padding-top: 0px;
@@ -232,11 +233,6 @@ tfoot {
     background-color: #dedede;
 }
 
-@media screen and (max-width: 1010px) {
-    .wrapper {
-        width: 95%;
-    }
-}
 @media screen and (max-width: 768px) {
     #image-titles {
         display: none;
@@ -261,4 +257,9 @@ tfoot {
         justify-content: space-around;
     }
 
+}
+@media screen and (max-width: 450px) {
+    .nav .wrapper {
+        border: none;
+    }
 }
