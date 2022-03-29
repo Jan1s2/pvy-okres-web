@@ -32,7 +32,7 @@ body {
     margin: 0 auto;
     margin-bottom: 0px;
     height: inherit;
-    max-width: 95%;
+    max-width: 90%;
     width: 960px;
     padding: 10px;
     padding-top: 0px;
@@ -234,6 +234,9 @@ tfoot {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        text-align: justify;
+    }
     #image-titles {
         display: none;
     }
@@ -256,10 +259,10 @@ tfoot {
     .top {
         justify-content: space-around;
     }
-
-}
-@media screen and (max-width: 450px) {
-    .nav .wrapper {
+    .nav .wrapper,
+    .titles .wrapper,
+    .content .wrapper {
         border: none;
     }
+
 }
