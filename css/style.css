@@ -75,6 +75,15 @@ body {
     color: white;
 }
 
+.top .icon {
+    display: none;
+    color: #9d9d9d;
+}
+.top .icon:hover {
+    color: white;
+}
+
+
 .middle {
     display: flex;
     flex-wrap: wrap;
@@ -253,16 +262,37 @@ tfoot {
     .sidebar {
         width: 100%;
     }
-    .top form {
+    .nav {
+        height: auto;
+    }
+    
+    .top {
+         flex-direction: column;
+        justify-content: space-around;
+    }
+    .top a,
+    .top .icon {
+        padding: 10px;
+    }
+    .top form,
+    .top a {
         display:none;
     }
-    .top {
-        justify-content: space-around;
+    
+    .top .icon {
+        display: inline;
+        font-size: 175%;
+        margin: 0;
+    }
+    .top.responsive a {
+        display: inline;
     }
     .nav .wrapper,
     .titles .wrapper,
     .content .wrapper {
         border: none;
     }
-
+    .nav .wrapper {
+        padding-bottom: 0;
+    }
 }
